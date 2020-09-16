@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendiendo JavaScript</title>
+    <link rel="stylesheet" href="">
+    <script src="js/javascript.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <!-- <h1 id="titulo">Hola soy un titulo</h1>
+
+    <h1>Bienvenido a mi página en HTML5</h1>
+
+    <button id="boton" class="btn btn-info">Cambiar color</button>
+    -->
+
+    <!--<h1 id="saludo"></h1>
+    <h1 id="suma">El resultado de la suma es: </h1>
+    -->
+    <script>
+
+        /*function suma(numero, numero2) {
+
+            return console.log(numero + numero2);
+        }
+
+        suma(10, 120);
+        numero = 10;
+        if (numero >= 1 && numero <= 3) {
+            console.log('Reprobado')
+        }
+        if (numero >= 4 && numero <= 6) {
+            console.log('Malo')
+        }
+        if (numero >= 7 && numero <= 9) {
+            console.log('Aprobado')
+        }
+        if (numero == 10) {
+            console.log('Matricula de honor')
+        }*/
+
+        /*var saludo = document.getElementById('saludo');
+        //Funcion común
+        function saludar(nombre){
+            return 'Hola como estas ' + nombre;
+        }
+        saludo.innerHTML = saludar('Luis Angel');
+
+        //Funcion Arrow (agilizar el proceso de una funcion común)
+        var saludar = nombre => 'Hola como estas ' + nombre; 
+        saludo.innerHTML = saludar ('Luis miguel');
+
+        //funcion arrow de suma
+        var sumaId = document.getElementById('suma');
+        var sumar =  (numero1, numero2) => (numero1+numero2) ;
+        sumaId.innerHTML += sumar(10,12);
+        */
+
+        //Objetos en javascript
+        var objeto = {
+            nombre: 'Luis Angel',
+            apellidos: 'Uscanga Macario'
+        }
+        console.log(objeto);
+
+
+        //Arreglo de Objetos anidados
+        var arregloDeObjetos = [
+            {
+                nombre: 'Luis Angel',
+                apellidos: 'Uscanga Macario',
+                nacionalidad: 'Mexicana',
+                titulos: {
+                    titulo1: 'Ing en sistemas',
+                    titulo2: 'Ing en Ti'
+                },
+
+            },
+            {
+                nombre: 'alex',
+                apellidos: 'Montiel',
+                nacionalidad: 'Colombiana',
+                titulos: {
+                    titulo1: 'Ing Economica',
+                    titulo2: 'Ing Agropecuaria',
+                    titulo3: 'Arquitectura'
+                },
+            }
+        ]
+        console.log(arregloDeObjetos[1].titulos.titulo2)
+        
+        //Recorrer Objetos
+
+        var arregloDeObjetos = [
+            {
+                nombre: 'HTML',
+                estado: true
+            },
+            {
+                nombre: 'JS',
+                estado: true
+            },
+            {
+                nombre: 'Java',
+                estado: false
+
+            }
+
+        ]
+
+        for (let recorrerArregloObj of arregloDeObjetos) {
+            console.log(recorrerArregloObj)
+        }
+
+    </script>
+
+
+
+</body>
+
+</html>
