@@ -6,7 +6,7 @@ function traer() {
         .then(data => {
             console.log(data.results)
             contenido.innerHTML = `<div class="card-body" style="width: 60rem; ">
-            <center><img src="${data.results[0].picture.large}" width="190px" class="img-fluid rounded-circle "></center>
+            <center><img src="${data.results[0].picture.large}" width="200px" class="img-fluid rounded-circle "></center>
             <h5 class="text-dark mt-3 card-text" align="justify" >
             Nombre: ${data.results[0].name.title} ${data.results[0].name.first} ${data.results[0].name.last} <br>
             Edad: ${data.results[0].registered.age} <br>
@@ -18,6 +18,7 @@ function traer() {
             Estado: ${data.results[0].location.state}<br>
             Direccion: ${data.results[0].location.street.name} ${data.results[0].location.street.number} 
             </h5>
+            
             </div>
             
             `
